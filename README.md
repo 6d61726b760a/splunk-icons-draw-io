@@ -1,2 +1,17 @@
-# splunk-icons-draw-io
-![obraz](https://user-images.githubusercontent.com/3711830/117277413-26718780-ae60-11eb-95b6-eb24f19c414d.png)
+ # splunk-icons-draw-io
+![icons-png contact sheet](contact-sheet.png "contact sheet")
+
+
+
+### creating a contact sheet
+
+```
+montage -verbose \
+    -label '%f' -font Helvetica -pointsize 15 \
+    -background '#FFFFFF' \
+    -fill 'gray' \
+    -geometry 200x200+10+10 \
+    -auto-orient \
+    icons-png/*.png \
+    ./contact-sheet.png
+```
